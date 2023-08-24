@@ -1,0 +1,65 @@
+@font-face {
+    font-family: "Outfit";
+    src: url("../fonts/Outfit/static/Outfit-Regular.ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Outfit";
+    src: url("../fonts/Outfit/static/Outfit-Bold.ttf");
+    font-weight: 700;
+    font-style: normal;
+}
+
+:root {
+    --gap: 1rem;
+    --page-bgcolor: hsl(212, 45%, 89%);
+    --card-bgcolor: hsl(0, 0%, 100%);
+    --h-color: hsl(218, 44%, 22%);
+    --p-color: hsl(220, 15%, 55%);
+
+    --fs: 15px;
+    --fw-n: 400;
+    --fw-b: 700;
+    --ff: "Outfit";
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--page-bgcolor);
+}
+
+.card {
+    background-color: var(--card-bgcolor);
+    width: 20rem;
+    margin: 11rem auto;
+    padding: var(--gap);
+    font-family: var(--ff);
+    border-radius: 16px;
+}
+
+.content {
+    text-align: center;
+    font-size: var(--fs);
+    margin: 0 1.5rem;
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+h1 {
+    color: var(--h-color);
+}
+
+p {
+    color: var(--p-color);
+    margin-bottom: 1.5rem;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+
+.attribution a { color: hsl(228, 45%, 44%); }
